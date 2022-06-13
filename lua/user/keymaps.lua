@@ -36,11 +36,19 @@ keymap("n", "<C-W-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "H", "^", opts)
 keymap("n", "J", "5j", opts)
 keymap("n", "K", "5k", opts)
+keymap("n", "W", "5w", opts)
+keymap("n", "E", "5e", opts)
+keymap("n", "B", "5b", opts)
 keymap("n", "L", "$", opts)
 
 -- Navigate buffers
 keymap("n", "<Left>", ":bprevious<CR>", opts)
 keymap("n", "<Right>",":bnext<CR>", opts)
+
+-- re-redo --
+keymap("n", "U", "<C-r>", opts)
+-- add Semicolon and goto next
+keymap("n","<leader>j","A;<Esc>o",opts)
 
 
 -- Move text up and down
