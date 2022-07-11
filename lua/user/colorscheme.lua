@@ -1,6 +1,6 @@
 vim.cmd [[
 try
-  colorscheme gruvbox
+  colorscheme gruvbox-material 
   set background=dark
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
